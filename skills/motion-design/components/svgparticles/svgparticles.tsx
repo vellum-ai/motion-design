@@ -1,4 +1,3 @@
-// Delivered by Originkit · stack: vite · styling: css
 // Set these props to match the Originkit preview:
 //   overrides={{"particleCount":50}}
 //   __curationVersion={1}

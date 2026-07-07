@@ -1,4 +1,3 @@
-// Delivered by Originkit · stack: vite · styling: css
 // Set these props to match the Originkit preview:
 //   overrides={{"imageConfig":{"mode":"fit","image":"https://imagedelivery.net/IEUjvl3YUlxY-MrTpOAWDQ/e00f3468-b36f-4bdd-e734-b85797d27100/w=800","scale":7,"widthPx":400,"heightPx":400,"sizeUnit":"%","widthPct":100,"heightPct":100},"hoverEnabled":true}}
 //   __curationVersion={1}

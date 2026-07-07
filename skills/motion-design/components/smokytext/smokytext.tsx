@@ -1,4 +1,3 @@
-// Delivered by Originkit · stack: vite · styling: css
 // Set these props to match the Originkit preview:
 //   overrides={{}}
 //   __curationVersion={1}

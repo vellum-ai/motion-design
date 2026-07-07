@@ -1,4 +1,4 @@
-# motion-animations
+# motion-design
 
 A Vellum plugin that teaches your assistant to build polished UI animations with [Motion](https://motion.dev) for React.
 
@@ -6,7 +6,7 @@ Ask for an animated product mockup, a chat conversation replay, a typing effect,
 
 ## What it ships
 
-One skill, `motion-animations`, containing:
+One skill, `motion-design`, containing:
 
 - **SKILL.md**: the workflow the assistant follows, from project setup to visual verification.
 - **references/patterns.md**: copy-ready code for the core patterns (script-driven playback, springs, stagger, ghost typing, AnimatePresence enter/exit).
@@ -16,10 +16,10 @@ One skill, `motion-animations`, containing:
 ## Install
 
 ```
-assistant plugins install vellum-ai/motion-animations
+assistant plugins install vellum-ai/motion-design
 ```
 
-Or copy the directory into your workspace at `plugins/motion-animations/`.
+Or copy the directory into your workspace at `plugins/motion-design/`.
 
 ## How to use
 
@@ -32,14 +32,14 @@ Once installed, just ask your assistant for an animation. The skill activates au
 
 The assistant scaffolds a Vite + React project, pulls the right patterns from the skill's references (script-driven playback, springs, ghost typing, enter/exit transitions), and verifies the result visually in a browser before calling it done.
 
-To point it at the worked example directly: "use the chat-mockup example from the motion-animations plugin as a starting point."
+To point it at the worked example directly: "use the chat-mockup example from the motion-design plugin as a starting point."
 
 ## The example
 
 The bundled example animates a Slack mobile conversation on loop: messages arrive with spring physics, a typing indicator bounces, a keyboard slides up and ghost-types a reply character by character, a villa carousel staggers in, and a link preview card pops with a reaction. Run it:
 
 ```
-cd skills/motion-animations/examples/chat-mockup
+cd skills/motion-design/examples/chat-mockup
 bun install
 bun run dev
 ```

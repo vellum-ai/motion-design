@@ -1,5 +1,5 @@
 ---
-name: motion-animations
+name: motion-design
 description: >-
   Build polished UI animations with Motion (motion.dev) for React. Use when
   the user asks for an animated product mockup, an animated chat or messaging
@@ -10,7 +10,7 @@ description: >-
 metadata:
   emoji: "🎬"
   vellum:
-    display-name: "Motion Animations"
+    display-name: "Motion Design"
     category: "creative"
     activation-hints:
       - "User wants an animated mockup or demo of a UI (chat, feed, dashboard, onboarding flow)"

@@ -1,6 +1,6 @@
 # chat-mockup
 
-A complete worked example for the motion-animations skill: a Slack-style mobile conversation animated on loop inside a phone frame.
+A complete worked example for the motion-design skill: a Slack-style mobile conversation animated on loop inside a phone frame.
 
 What it demonstrates:
 

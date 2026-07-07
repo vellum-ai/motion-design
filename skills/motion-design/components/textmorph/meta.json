@@ -1,0 +1,9 @@
+{
+  "name": "textmorph",
+  "displayName": "Text Morph",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Cycle through a word list with a gooey blur-and-scale morph that melts each word smoothly into the next.",
+  "category": "text"
+}

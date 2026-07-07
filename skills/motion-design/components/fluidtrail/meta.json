@@ -1,0 +1,9 @@
+{
+  "name": "fluidtrail",
+  "displayName": "Fluid Trail",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Paint a glowing, GPU-simulated fluid trail that swirls and drifts behind the cursor with real Navier-Stokes physics.",
+  "category": "interactive-elements"
+}

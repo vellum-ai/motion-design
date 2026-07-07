@@ -1,0 +1,9 @@
+{
+  "name": "blackhole",
+  "displayName": "Black Hole",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Render a physically convincing 3D black hole with orbiting particles, depth-sorted occlusion, gravity inflow, and a glowing event-horizon core.",
+  "category": "interactive-elements"
+}

@@ -11,6 +11,7 @@ One skill, `motion-design`, containing:
 - **SKILL.md**: the workflow the assistant follows, from project setup to visual verification.
 - **references/patterns.md**: copy-ready code for the core patterns (script-driven playback, springs, stagger, ghost typing, AnimatePresence enter/exit).
 - **references/pitfalls.md**: bugs that cost real debugging time, and how to avoid them (overflow clipping, React strict mode, rapid state flips).
+- **components/**: a library of ready-to-use animated React components (particle effects, text animations, 3D galleries, interactive backgrounds), sourced from [Originkit](https://originkit.dev) via their MCP. See `components/INDEX.md` for the catalog.
 - **examples/chat-mockup**: a complete working Vite + React + Motion project you can run with `bun install && bun run dev`.
 
 ## Install

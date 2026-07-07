@@ -1,0 +1,11 @@
+{
+  "name": "infinitegallery",
+  "displayName": "Infinity Canvas",
+  "stack": "vite",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "installHint": "npm install framer-motion",
+  "description": "An infinitely zoomable and draggable image gallery with smooth motion, momentum, and immersive navigation.",
+  "category": "image-gallery"
+}

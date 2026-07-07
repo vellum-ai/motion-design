@@ -1,0 +1,11 @@
+{
+  "name": "weight-hover",
+  "displayName": "Weight Hover",
+  "stack": "vite",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "installHint": "npm install framer-motion",
+  "description": "Morph each letter's variable-font weight on hover, staggered letter-by-letter with a spring that eases in and out.",
+  "category": "text"
+}

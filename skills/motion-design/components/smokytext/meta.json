@@ -1,0 +1,9 @@
+{
+  "name": "smokytext",
+  "displayName": "Smoky Text",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Animate text with realistic smoke diffusion, customizable reveal directions, trigger modes, and smooth character-based transitions.",
+  "category": "text"
+}

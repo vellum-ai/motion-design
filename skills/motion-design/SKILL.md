@@ -96,6 +96,12 @@ An animation that compiles is not an animation that works. The failure mode is s
 
 If a screenshot shows nothing where something should be, check `references/pitfalls.md` first; the top three bugs there account for most invisible-animation reports.
 
+## Component library
+
+`components/` holds ready-to-use animated React components sourced from [Originkit](https://originkit.dev) (free animated component library), served as Vite + TypeScript + CSS variants. Browse `components/INDEX.md` for the full catalog with categories and descriptions: particle effects, text animations, 3D galleries, interactive backgrounds, and more.
+
+When a request matches one of these (a black hole hero, smoky text reveal, infinite gallery, pixel reveal, and so on), start from the library component instead of building from scratch: copy `components/<name>/<name>.tsx` into the project, check `meta.json` for dependencies (most have none; a few need `framer-motion`), and adapt props. Components marked *pending* in the index are not yet imported; build those from the patterns instead.
+
 ## Worked example
 
 `examples/chat-mockup/` is a complete project: a Slack-style mobile chat in a phone frame that loops forever. It demonstrates every pattern in the references: script-driven playback, typing indicator, ghost typing on a slide-up keyboard, staggered carousel, link preview pop, reaction badges, and auto-scroll. Run it with `bun install && bun run dev` from that directory, and copy structure from it rather than starting cold.

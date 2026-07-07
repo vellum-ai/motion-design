@@ -1,0 +1,9 @@
+{
+  "name": "spiralimages",
+  "displayName": "Spiral Images",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Images flow along an Archimedean spiral vortex from the edge into the center, rotating to follow the tangent and fading at both ends.",
+  "category": "image-gallery"
+}

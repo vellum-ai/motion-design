@@ -1,0 +1,9 @@
+{
+  "name": "svgparticles",
+  "displayName": "SVG Particle",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Transform images/SVGs into interactive particle animations with hover and repulsion effects.",
+  "category": "interactive-elements"
+}

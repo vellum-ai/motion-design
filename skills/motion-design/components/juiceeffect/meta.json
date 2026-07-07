@@ -1,0 +1,9 @@
+{
+  "name": "juiceeffect",
+  "displayName": "Juice Effect",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Fill an image silhouette with gooey, rising-and-falling liquid particles that fuse into organic blobs and scatter from the cursor.",
+  "category": "interactive-elements"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "pixelreveal",
+  "displayName": "Pixel Reveal",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Dissolve a grid of colored pixel squares to reveal an image, sweeping up, down, left, or right with a ragged, noisy leading edge.",
+  "category": "animation"
+}

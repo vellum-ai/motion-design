@@ -21,6 +21,19 @@ assistant plugins install vellum-ai/motion-animations
 
 Or copy the directory into your workspace at `plugins/motion-animations/`.
 
+## How to use
+
+Once installed, just ask your assistant for an animation. The skill activates automatically when the request matches. For example:
+
+- "Build an animated mockup of a chat conversation between two people"
+- "Make a demo animation of my app's onboarding flow"
+- "Add a typing effect and staggered card reveal to this React component"
+- "Create a looping product animation I can screen-record for a landing page"
+
+The assistant scaffolds a Vite + React project, pulls the right patterns from the skill's references (script-driven playback, springs, ghost typing, enter/exit transitions), and verifies the result visually in a browser before calling it done.
+
+To point it at the worked example directly: "use the chat-mockup example from the motion-animations plugin as a starting point."
+
 ## The example
 
 The bundled example animates a Slack mobile conversation on loop: messages arrive with spring physics, a typing indicator bounces, a keyboard slides up and ghost-types a reply character by character, a villa carousel staggers in, and a link preview card pops with a reaction. Run it:

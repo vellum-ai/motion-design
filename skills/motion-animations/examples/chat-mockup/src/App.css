@@ -1,0 +1,622 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", system-ui, sans-serif;
+}
+
+.app-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a5e2e;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* ===== Phone Frame ===== */
+.phone-frame {
+  position: relative;
+  width: 375px;
+  height: 760px;
+  background: #000;
+  border-radius: 50px;
+  padding: 12px;
+  box-shadow:
+    0 0 0 2px #2a2a2e,
+    0 25px 60px rgba(0, 0, 0, 0.55),
+    0 8px 20px rgba(0, 0, 0, 0.3);
+  perspective: 1000px;
+}
+
+.phone-notch {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 32px;
+  background: #000;
+  border-radius: 0 0 20px 20px;
+  z-index: 10;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* ===== Status Bar ===== */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  flex-shrink: 0;
+}
+
+.status-time { letter-spacing: -0.3px; }
+
+.status-icons {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+}
+
+.signal-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.signal-dot.dim { background: #bbb; }
+
+.battery {
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ===== Slack Floating Header ===== */
+.slack-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px 10px;
+  background: transparent;
+  flex-shrink: 0;
+  z-index: 5;
+}
+
+.header-circle {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: #f6f6f6;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.back-chevron {
+  font-size: 26px;
+  font-weight: 400;
+  color: #1d1c1d;
+  margin-top: -3px;
+}
+
+.header-icon {
+  font-size: 17px;
+}
+
+.header-pill {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f6f6f6;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  padding: 7px 16px;
+  min-width: 0;
+}
+
+.header-hash {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1d1c1d;
+}
+
+.header-pill-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.header-channel {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1d1c1d;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-meta {
+  font-size: 12px;
+  color: #616061;
+  font-weight: 400;
+}
+
+.header-right {
+  display: flex;
+  gap: 6px;
+}
+
+/* ===== Chat Body ===== */
+.chat-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0 12px;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  min-height: 0;
+  background: #fff;
+}
+
+.chat-body::-webkit-scrollbar { width: 0; }
+
+/* ===== Date Divider ===== */
+.date-divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 0 4px;
+}
+
+.date-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: #e8e8e8;
+  z-index: 0;
+}
+
+.date-pill {
+  position: relative;
+  z-index: 1;
+  margin-left: 16px;
+  background: #fff;
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #1d1c1d;
+}
+
+/* ===== Slack Messages ===== */
+.slack-message {
+  display: flex;
+  gap: 10px;
+  padding: 0 16px;
+}
+
+.slack-message.first { padding-top: 12px; }
+.slack-message.grouped { padding-top: 3px; }
+
+.msg-avatar-slot {
+  width: 38px;
+  min-width: 38px;
+}
+
+.msg-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  object-fit: cover;
+  margin-top: 2px;
+  background: #f4f4f4;
+}
+
+.avatar-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8912d;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.msg-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+  min-width: 0;
+}
+
+.msg-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.msg-sender {
+  color: #1d1c1d;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+.msg-time {
+  color: #9a999b;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.msg-typing-label {
+  color: #616061;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.msg-text {
+  color: #1d1c1d;
+  font-size: 15px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* ===== Reactions ===== */
+.msg-reactions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.reaction-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #eef3f8;
+  border: 1px solid #d0d9e2;
+  border-radius: 14px;
+  padding: 3px 10px;
+  font-size: 14px;
+}
+
+.reaction-count {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1264a3;
+}
+
+.reaction-add {
+  display: inline-flex;
+  align-items: center;
+  background: #f4f4f4;
+  border-radius: 14px;
+  padding: 3px 10px;
+  font-size: 13px;
+  color: #616061;
+}
+
+/* ===== Villa Carousel ===== */
+.carousel {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar { display: none; }
+
+.carousel-card {
+  min-width: 180px;
+  max-width: 180px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.carousel-img {
+  width: 100%;
+  height: 105px;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px 10px;
+}
+
+.carousel-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1d1c1d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-meta {
+  font-size: 11px;
+  color: #616061;
+}
+
+/* ===== Link Preview ===== */
+.link-preview {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  max-width: 280px;
+}
+
+.link-bar {
+  width: 4px;
+  min-width: 4px;
+  border-radius: 2px;
+  background: #ddd;
+}
+
+.link-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.link-domain {
+  font-size: 12px;
+  color: #616061;
+  font-weight: 500;
+}
+
+.link-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1264a3;
+  line-height: 1.3;
+}
+
+.link-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 4px;
+  border: 1px solid #e8e8e8;
+  display: block;
+}
+
+/* ===== Typing Dots ===== */
+.typing-dots {
+  display: flex;
+  gap: 4px;
+  padding: 4px 0;
+}
+
+.typing-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #9a999b;
+}
+
+/* ===== Input Area ===== */
+.input-area {
+  padding: 6px 10px 10px;
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.input-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.06),
+    0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 12px 14px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-text {
+  font-size: 16px;
+  color: #9a999b;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  min-height: 22px;
+}
+
+.input-text.has-text {
+  color: #1d1c1d;
+  display: block;
+  text-align: left;
+  white-space: normal;
+  overflow: visible;
+  word-break: break-word;
+}
+
+.input-typed {
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-width: 0;
+}
+
+.input-caret {
+  display: inline-block;
+  width: 2px;
+  height: 18px;
+  background: #4a6cf5;
+  margin: 0 1px;
+  animation: caret-blink 1s step-end infinite;
+}
+
+@keyframes caret-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.input-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  height: 24px;
+}
+
+.input-icon {
+  color: #a8a8a8;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  line-height: 1;
+}
+
+.plus-circle {
+  border-radius: 50%;
+  background: #f2f2f2;
+  font-size: 15px;
+  font-weight: 400;
+  color: #8d8d8d;
+  padding-bottom: 1px;
+}
+
+.slash-box {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  border: 1.2px solid #b5b5b5;
+  border-radius: 4px;
+  font-size: 10px;
+  color: #a8a8a8;
+  align-self: center;
+}
+
+.icon-aa {
+  font-size: 14px;
+  letter-spacing: -0.5px;
+}
+
+.icon-at {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.input-spacer { flex: 1; }
+
+.input-send {
+  color: #c9c9c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.input-send.active {
+  color: #007a5a;
+}
+
+/* ===== iOS Light Keyboard ===== */
+.keyboard {
+  background: #d1d4da;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.keyboard-inner {
+  padding: 8px 4px 6px;
+}
+
+.key-row {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 8px;
+  justify-content: center;
+  padding: 0 2px;
+}
+
+.key {
+  height: 42px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 400;
+  flex: 1;
+  user-select: none;
+  min-width: 0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+  transition: background-color 0.08s, color 0.08s, transform 0.08s;
+}
+
+.key-letter {
+  background: #ffffff;
+  color: #000;
+}
+
+.key-special {
+  background: #b3b9c4;
+  color: #000;
+  font-size: 16px;
+}
+
+.key-active {
+  background: #8f959f !important;
+  transform: scale(0.92);
+}
+
+.keyboard-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 24px 8px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+/* ===== Home Indicator ===== */
+.home-indicator {
+  width: 130px;
+  height: 5px;
+  background: #000;
+  border-radius: 3px;
+  margin: 0 auto 8px;
+  opacity: 0.85;
+  flex-shrink: 0;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@vellum-ai/motion-animations",
+  "version": "0.1.0",
+  "description": "Teaches the assistant to build polished UI animations with Motion (motion.dev) for React: animated product mockups, chat replays, typing effects, and staggered reveals.",
+  "license": "MIT",
+  "peerDependencies": {
+    "@vellumai/plugin-api": "^0.10.0"
+  },
+  "vellum": {}
+}

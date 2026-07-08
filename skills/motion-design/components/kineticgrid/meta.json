@@ -1,0 +1,9 @@
+{
+  "name": "kineticgrid",
+  "displayName": "Kinetic Grid",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "An interactive grid background that dynamically reacts to cursor movement with smooth attraction, animated mesh lines, and an optional cursor trail.",
+  "category": "interactive-elements"
+}

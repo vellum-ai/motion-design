@@ -1,0 +1,11 @@
+{
+  "name": "draggable-grid",
+  "displayName": "Draggable Grid",
+  "stack": "vite",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "installHint": "npm install framer-motion",
+  "description": "An infinitely draggable image canvas with smooth momentum, responsive layouts, and seamless gallery exploration.",
+  "category": "image-gallery"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "pixelcard",
+  "displayName": "Pixel Card",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Fill a card with a shimmering canvas grid of pixels that grow in from the center or any edge on hover, scroll, or automatically.",
+  "category": "background-animation"
+}

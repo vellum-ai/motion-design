@@ -1,0 +1,9 @@
+{
+  "name": "particlesphere",
+  "displayName": "Particle Sphere",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Spin an interactive 3D sphere of thousands of glowing particles that scatter away from your cursor and clicks.",
+  "category": "interactive-elements"
+}

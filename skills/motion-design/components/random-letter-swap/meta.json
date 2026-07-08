@@ -1,0 +1,11 @@
+{
+  "name": "random-letter-swap",
+  "displayName": "Random Letter Swap",
+  "stack": "vite",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "installHint": "npm install framer-motion",
+  "description": "Swap each letter of a heading vertically on hover, revealing a duplicate glyph in a randomized, staggered order.",
+  "category": "text"
+}

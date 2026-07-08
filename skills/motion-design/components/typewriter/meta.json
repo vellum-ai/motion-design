@@ -1,0 +1,11 @@
+{
+  "name": "typewriter",
+  "displayName": "Type Writer",
+  "stack": "vite",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "installHint": "npm install framer-motion",
+  "description": "Types out a rotating list of phrases one character at a time with a blinking cursor and a static, separately colored prefix.",
+  "category": "text"
+}

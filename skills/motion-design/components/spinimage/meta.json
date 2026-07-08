@@ -1,0 +1,9 @@
+{
+  "name": "spinimage",
+  "displayName": "Spin Image",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Orbit a set of images along a tilted 3D ellipse with continuous spin, depth-based scaling, and front-to-back layering.",
+  "category": "image-gallery"
+}

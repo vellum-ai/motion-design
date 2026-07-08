@@ -1,0 +1,9 @@
+{
+  "name": "risinglines",
+  "displayName": "Rising Lines",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Emit two layers of glowing particles \u2014 thin line sparks and soft blobs \u2014 rising or falling from a luminous horizon on canvas.",
+  "category": "animation"
+}

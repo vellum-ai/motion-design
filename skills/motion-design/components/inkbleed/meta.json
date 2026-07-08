@@ -1,0 +1,9 @@
+{
+  "name": "inkbleed",
+  "displayName": "Inkbleed",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Create interactive ink bleed effects that react fluidly to cursor movement.",
+  "category": "text"
+}

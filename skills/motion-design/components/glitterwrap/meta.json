@@ -1,0 +1,9 @@
+{
+  "name": "glitterwrap",
+  "displayName": "Glitter Wrap",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Send a glittering starfield of particles warping outward or inward from center, with random sparkle flashes and motion streaks.",
+  "category": "animation"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "spotlighttext",
+  "displayName": "Spotlight Text",
+  "stack": "vite",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "installHint": "npm install framer-motion",
+  "description": "Dim a block of text and sweep a soft cursor-following spotlight across it to reveal the bright letters underneath on hover.",
+  "category": "text"
+}

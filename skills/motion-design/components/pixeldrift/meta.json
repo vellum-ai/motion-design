@@ -1,0 +1,9 @@
+{
+  "name": "pixeldrift",
+  "displayName": "Pixel Drift",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Interactive particle typography that assembles, disperses, and reacts to cursor movement with smooth physics-based animations.",
+  "category": "interactive-elements"
+}

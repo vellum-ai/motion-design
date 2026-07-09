@@ -1,0 +1,11 @@
+{
+  "name": "swipe-stack",
+  "displayName": "Swipe Stack",
+  "stack": "vite",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "installHint": "npm install framer-motion",
+  "description": "Flick through a fanned 3D stack of image cards that tilt, scale, and cycle to the back on every swipe.",
+  "category": "image-gallery"
+}

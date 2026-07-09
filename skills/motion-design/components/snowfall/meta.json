@@ -1,0 +1,9 @@
+{
+  "name": "snowfall",
+  "displayName": "Snow Fall",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Fill any frame with drifting canvas snow, tuning per-flake size, speed, opacity, wind sway, and fall direction.",
+  "category": "background-animation"
+}

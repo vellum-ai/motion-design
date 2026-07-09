@@ -1,0 +1,11 @@
+{
+  "name": "boxcarousel",
+  "displayName": "Box Carousel",
+  "stack": "vite",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "installHint": "npm install framer-motion",
+  "description": "Rotate images and videos across the four faces of a 3D cube, driven by autoplay, drag, or arrow keys.",
+  "category": "image-gallery"
+}

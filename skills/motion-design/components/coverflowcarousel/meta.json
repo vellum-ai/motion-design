@@ -1,0 +1,11 @@
+{
+  "name": "coverflowcarousel",
+  "displayName": "Coverflow Carousel",
+  "stack": "vite",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "installHint": "npm install framer-motion",
+  "description": "Glide through an infinite cover-flow reel where the centered image grows into a landscape hero while its neighbors fold into thin slats.",
+  "category": "image-gallery"
+}

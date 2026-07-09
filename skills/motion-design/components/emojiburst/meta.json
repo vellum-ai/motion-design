@@ -1,0 +1,9 @@
+{
+  "name": "emojiburst",
+  "displayName": "Emoji Burst",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Launch a burst of custom emojis from a tappable button, flying off freely under gravity with a springy shake on each press.",
+  "category": "button"
+}

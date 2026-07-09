@@ -1,0 +1,11 @@
+{
+  "name": "usercursor",
+  "displayName": "User Cursor",
+  "stack": "vite",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "installHint": "npm install framer-motion",
+  "description": "Replace the native pointer inside any surface with a spring-tracked arrow and a trailing name pill that rocks with cursor speed.",
+  "category": "interactive-elements"
+}

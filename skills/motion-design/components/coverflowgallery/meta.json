@@ -1,0 +1,9 @@
+{
+  "name": "coverflowgallery",
+  "displayName": "Coverflow Gallery",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "A smooth 3D coverflow carousel with perspective animations, autoplay, and fully customizable titles.",
+  "category": "image-gallery"
+}

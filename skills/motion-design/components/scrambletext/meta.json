@@ -1,0 +1,9 @@
+{
+  "name": "scrambletext",
+  "displayName": "Scramble Text",
+  "stack": "vite",
+  "dependencies": [],
+  "installHint": "No extra dependencies.",
+  "description": "Animate text with cinematic glitch reveals and interactive character-based hover effects.",
+  "category": "text"
+}
